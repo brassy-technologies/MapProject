@@ -1,0 +1,147 @@
+<div class="row">
+	<span *ngIf="!sidebar"  class="list-open">
+	    <i (click)="toggleSidebar(true)" class="bi bi-list"></i> 
+	</span>
+	<div style="padding:10px;margin-top: .5rem;" [ngClass]="[sidebar ? 'col-10': 'col-12']">
+		<div [ngClass]="sidebar ? 'top-icon' : 'top-icon-fixed'">
+			<i (click)="refresh()" style="cursor:pointer;" class="bi bi-arrow-clockwise"></i>
+			<i class="bi bi-x-lg"></i>
+		</div>
+		
+		<div style="padding:0.5rem">
+			<div class="side-bar">
+				<p class="device">Devices</p>
+				<p class="choose">Choose Status</p>
+				<select [(ngModel)]="selectedBrand" (change)="valueSelected()">
+				  <option value="Normal"><p class="fail"></p>Active</option>
+				  <option value="Partial">Partial</option>
+				  <option value="Fail">Off</option>
+				  <option value="all"> Select All</option>
+				</select>
+				<p class="add-device">Add New Devices</p>
+			</div>
+		</div>
+		<div >
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col-2 left-side">
+				<p class="siren-heading">Sirens</p>
+				<div class="siren-div">
+					<div *ngIf="failCount" [ngClass]="[selectedBrand == 'Fail' ? 'classBold' : '']" (click)="sirensValue('Fail')">
+						<p class="sub-sirens">{{failCount}}</p>
+						<p class="off">Off</p>
+					</div>
+					<div *ngIf="partialCount" [ngClass]="[selectedBrand == 'Partial' ? 'classBold' : '']" (click)="sirensValue('Partial')">
+						<p class="one">{{partialCount}}</p>
+						<p class="partial">Partial</p>
+					</div>
+				</div>
+				
+				<p class="control">Control Center</p>
+				<div style="justify-content:left" class="siren-div">
+					<p class="one-control">1</p>
+					<p class="one-off">Off</p>
+					
+				</div>
+			</div>
+			<div style="margin-top:1rem;padding:2rem;padding-top: 0;" class="col-10">
+				<p *ngIf="greenRegionData.length > 0" style="background-color:black;color: white;padding: 5px;width:100%">Green Region</p>
+				<table *ngIf="greenRegionData.length > 0" style="width: 100%;">
+					<tr>
+						<th>Status</th>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Flags</th>
+					</tr>
+					<tr *ngFor="let data of greenRegionData">
+						<td style="width:100px">
+							<div>
+								<p *ngIf="data['status'] == 'Normal'" class="normal"></p>
+								<p *ngIf="data['status'] == 'Partial'" class="partial_1"></p>
+								<p *ngIf="data['status'] == 'Fail'" class="fail"></p>
+							</div>
+						</td>
+						<td>{{data.dId}}</td>
+						<td>{{data.name}}</td>
+						<td>-</td>
+						<td style="width:130px">
+							<div style="display:flex;align-items: center;">
+								<p *ngIf="data['Flag 1'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 1'] == false" class="red-flag"></p>
+								<p *ngIf="data['Flag 2'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 2'] == false"  class="red-flag"></p>
+								<p *ngIf="data['Flag 3'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 3'] == false"  class="red-flag"></p>
+								<p *ngIf="data['Flag 4'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 4'] == false" class="red-flag"></p>
+								<p *ngIf="data['Flag 5'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 5'] == false"  class="red-flag"></p>
+							</div>
+							
+						</td>
+					</tr>
+				</table>
+				<p *ngIf="blueRegionData.length > 0" style="background-color:black;color: white;margin-top: 1rem;padding: 5px;width:100%">Blue Region</p>
+				<table *ngIf="blueRegionData.length > 0" style="width: 100%;">
+					<tr>
+						<th>Status</th>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Flags</th>
+					</tr>
+					<tr *ngFor="let data of blueRegionData">
+						<td style="width:100px">
+							<div>
+								<p *ngIf="data['status'] == 'Normal'" class="normal"></p>
+								<p *ngIf="data['status'] == 'Partial'" class="partial_1"></p>
+								<p *ngIf="data['status'] == 'Fail'" class="fail"></p>
+							</div>
+						</td>
+						<td>{{data.dId}}</td>
+						<td>{{data.name}}</td>
+						<td>-</td>
+						<td style="width:130px">
+							<div style="display:flex;">
+								<p *ngIf="data['Flag 1'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 1'] == false"  class="red-flag"></p>
+								<p *ngIf="data['Flag 2'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 2'] == false"  class="red-flag"></p>
+								<p *ngIf="data['Flag 3'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 3'] == false"  class="red-flag"></p>
+								<p *ngIf="data['Flag 4'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 4'] == false"  class="red-flag"></p>
+								<p *ngIf="data['Flag 5'] == true" class="green-flag"></p>
+								<p *ngIf="data['Flag 5'] == false"  class="red-flag"></p>
+							</div>
+							
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>  
+	<div [ngClass]="[sidebar ? 'col-md-2 ' + sidebarClass : sidebarClass]">
+	    <div class="sub-side">
+	      <li class="list-close">
+	        <a (click)="toggleSidebar(false)">x</a>
+	      </li>
+	    	<li class="list-md"><img src="assets/logo.png"></li>
+	      <li class="list-map">
+	        <a [routerLink]="['/']">Map</a>
+	      </li>
+	      <li  class="list-device">
+	        <a [routerLink]="['/devices']" href="">Devices <span>{{statusFailCount}}</span></a>
+	      </li>
+	      <div class="bottomClass">
+	         <i style="margin-right: 0.7rem" class="bi bi-gear-wide-connected"></i>
+	        <i class="bi bi-box-arrow-right"></i>
+
+	      </div>
+	    </div>
+	</div>
+
+
+</div>

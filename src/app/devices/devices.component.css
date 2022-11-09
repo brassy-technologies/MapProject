@@ -1,0 +1,206 @@
+option{
+	background-color: white;
+	color: black;
+}
+
+tr{
+	border-bottom: 1px solid;
+}
+th,td{
+	padding: 1px;
+}
+td p{
+	margin-right: 10px;
+	margin-top: 14px;
+}
+li{
+	list-style: none;
+}
+.sidebar{
+	background-color:black;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	display: block;
+}
+.sub-side{
+	margin-top:88%;
+	padding-right: 13px;
+}
+.list-md{
+	padding-bottom: 5rem;
+}
+.list-md img{
+	width:100%
+}
+.list-map{
+	 padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+}
+.list-map a{
+	color: white;font-size: 1.8rem;text-decoration: none;font-weight: 600;
+}
+.list-device{
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid white;
+}
+.list-device a{
+	color: #00b2eb;font-size: 1.8rem;text-decoration: none;font-weight: 600;display: flex;
+    align-items: center;
+}
+.list-close{
+	background: white;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    padding: 8px 13px;
+   cursor: pointer;
+    border-radius: 31px;
+}
+.list-close a{
+	 font-size: 36px;
+	     top: 2px;
+    position: relative;
+}
+.removeSidebar{
+	display: none;
+
+}
+.list-open i{
+	cursor: pointer;
+	    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    padding: 11px 11px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+.bottomClass{
+	position: absolute;
+	bottom: 20px;
+	color: white;
+	right: 20px;
+}
+.bottomClass i {
+	font-size: 1.3rem;
+}
+.list-device span{
+	    background: red;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 12px;
+}
+.side-bar{
+	background-color:black;position: relative;color: white;padding: 5px;width:100%;display:flex;align-items: center;
+}
+.device{
+	width: 100px;margin: 0;
+}
+
+.choose{
+	text-align: center; width: 120px;background-color: grey;color: white;padding: 5px;margin: 0;margin-left: 5rem;
+}
+
+
+select{
+	cursor: pointer;    height: 30px;margin-left: 10px;background: grey;color: white;
+}
+.add-device{
+	cursor: pointer;   position: absolute;right: 12px;text-align: center; width: 120px;background-color: #00b2eb;color: white;padding: 5px;margin: 0;margin-left: 5rem;
+}
+.green-flag{
+	background-color:green;padding: 10px;width: 10px;
+}
+.red-flag{
+	background-color:red;padding: 10px;width: 10px;
+}
+.left-side{
+	margin-top:1rem;border-right: 1px solid;padding-left: 1.5rem;padding-right: .8rem;
+}
+.siren-heading{
+	background-color:#00b2eb;text-align: center; color: white;padding: 5px;width:100%
+}
+.siren-div{
+	display:flex;align-items: center;justify-content: space-around;
+}
+.siren-div div{
+cursor: pointer;
+display: flex;
+align-items: center;
+}	
+.classBold .sub-sirens{
+	border-width: 3px
+}
+.sub-sirens{
+	border-radius: 50%;padding: 2px;border: 2px solid red;text-align: center;width: 28px;color: red;
+}
+.off{
+	padding-left: 4px;padding-right: 6px;color: red;
+}
+.one{
+	padding-left: 4px;padding-right: 6px;color: #ffe101;border: 2px solid #ffe101;border-radius: 50%;    width: 28px;
+    padding: 2px;
+    text-align: center;
+}
+.classBold .one{
+	border-width: 3px
+}
+.partial{
+	padding-left: 4px;color: #ffe101;
+}
+.control{
+	background-color:grey;text-align: center; color: white;padding: 5px;width:100%
+}
+.one-control{
+	border-radius: 50%;padding: 2px;border: 2px solid grey;text-align: center;width: 28px;margin-left: 0.3em;
+}
+.one-off{
+	padding-left: 4px;padding-right: 6px;color: grey;
+}
+.normal{
+	border-radius: 25px;background-color:green;padding: 10px;width: 10px;
+}
+.partial_1{
+border-radius: 25px;background-color:#ffe101;padding: 10px;width: 10px;
+}
+.fail{
+	border-radius: 25px;background-color:red;padding: 10px;width: 10px;
+}
+
+.optionfail{
+	height: 25px;
+	width: 25px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+}
+.top-icon i{
+ border: 1px solid;
+ padding: 3px;
+  margin-right: 4px;
+
+}
+.top-icon{
+	float: right;
+    margin-right: 0.51rem;
+    margin-bottom: 1rem;
+}
+.top-icon-fixed{
+	float: right;
+    margin-right: 4.51rem;
+    margin-bottom: 1rem;
+}
+.top-icon-fixed i{
+ border: 1px solid;
+ padding: 3px;
+ margin-right: 4px;
+}
+.classBold{
+	font-weight: bolder;
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MapProject</title>
+  <base href="/">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- Map Api Key Here -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXX"></script>
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function myFunction1(response){
+      console.log("game");
+        var event = new CustomEvent("popup.success", 
+            {
+              detail:response,
+                bubbles: true,
+                cancelable: true
+            }
+        );    
+        window.dispatchEvent(event);
+    }
+    function cancelFunction(){
+      console.log("cancel");
+        var event = new CustomEvent("popup.close", 
+            {
+                bubbles: true,
+                cancelable: true
+            }
+        );    
+        window.dispatchEvent(event);
+    }
+    function goto(){
+      console.log("cancel");
+        var event = new CustomEvent("popup.goto", 
+            {
+                bubbles: true,
+                cancelable: true
+            }
+        );    
+        window.dispatchEvent(event);
+    }
+     function refresh(response){
+
+      console.log("refresh",response);
+        var event = new CustomEvent("popup.refresh", 
+            {
+               detail:response,
+                bubbles: true,
+                cancelable: true
+            }
+        );    
+        window.dispatchEvent(event);
+    }
+    function saveFunction(response){
+      console.log("game1");
+        var event = new CustomEvent("popup.complete", 
+            {
+              detail:response,
+                bubbles: true,
+                cancelable: true
+            }
+        );    
+        window.dispatchEvent(event);
+    }
+  </script>
+  <script type="text/javascript">
+    jQuery('#beforeunload').on('click', () => {
+      console.log("ds")
+   var myDialogEvent = new CustomEvent("showDialog", {
+    cancelable: true,
+    detail: {
+          desc: "Display alert message with custom text",
+          time: new Date(),
+    }
+    });
+    var myDialogEvent = new CustomEvent("showDialog", {});
+    window.dispatchEvent(myDialogEvent);
+});
+  </script>
+  
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+</body>
+</html>

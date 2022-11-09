@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.col-4{
+	padding: 0 !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.top-icon1 i{
+ border: 1px solid;
+ padding: 3px;
+  margin-right: 4px;
+
+}
+.top-icon1{
+	float: right;
+    margin: 0;
+}
+.gm-style{
+	max-height: 650px !important;
+}
+.fail{
+	border-radius: 25px;background-color:red;padding: 10px;width: 10px;
+}

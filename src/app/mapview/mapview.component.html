@@ -1,0 +1,27 @@
+<div class="row">
+  <span *ngIf="!sidebar"  class="list-open">
+         <i (click)="toggleSidebar(true)" class="bi bi-list"></i>
+      </span>
+  <div style="padding:0" [ngClass]="[sidebar ? 'col-10': 'col-12']">
+    <div #map style="width: 100%; height: 96vh"></div>
+  </div>
+   <div [ngClass]="[sidebar ? 'col-md-2 ' + sidebarClass : sidebarClass]">
+      <div class="sub-side">
+        <li class="list-close">
+          <a (click)="toggleSidebar(false)">x</a>
+        </li>
+        <li class="list-md"><img src="assets/logo.png"></li>
+        <li class="list-map">
+          <a [routerLink]="['/']">Map</a>
+        </li>
+        <li  class="list-device">
+          <a [routerLink]="['/devices']" href="">Devices <span>{{statusFailCount}}</span></a>
+        </li>
+      </div>
+      <div class="bottomClass">
+         <i style="margin-right: 0.7rem" class="bi bi-gear-wide-connected"></i>
+        <i class="bi bi-box-arrow-right"></i>
+
+      </div>
+  </div>
+</div>  

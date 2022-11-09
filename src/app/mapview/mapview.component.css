@@ -1,0 +1,94 @@
+li{
+	    list-style: none;
+}
+.sidebar{
+	background-color:black;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+}
+.sub-side{
+	margin-top:88%;
+	padding-right: 13px;
+}
+.list-md{
+	padding-bottom: 5rem;
+}
+.list-md img{
+	width:100%
+}
+.list-map{
+	 padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+}
+.list-map a{
+	color: #00b2eb;font-size: 1.8rem;text-decoration: none;font-weight: 600;
+}
+.list-device{
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid white;
+
+}
+.list-device a{
+		font-size: 1.8rem;text-decoration: none;color: white;font-weight: 600;display: flex;
+    align-items: center;
+}
+.list-close{
+	background: white;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    padding: 8px 13px;
+   cursor: pointer;
+    border-radius: 31px;
+}
+.list-close a{
+	 font-size: 36px;
+	     top: 2px;
+    position: relative;
+}
+.removeSidebar{
+	display: none;
+
+}
+.list-open i{
+	cursor: pointer;
+	    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    padding: 11px 11px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+.bottomClass{
+	position: absolute;
+	bottom: 20px;
+	color: white;
+	right: 20px;
+}
+.bottomClass i {
+	font-size: 1.3rem;
+}
+.list-device span{
+	    background: red;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 12px;
+}
+.top-icon i{
+ border: 1px solid;
+ padding: 3px;
+  margin-right: 4px;
+
+}
+.top-icon{
+	float: right;
+    margin-right: 0.51rem;
+    margin-bottom: 1rem;
+}

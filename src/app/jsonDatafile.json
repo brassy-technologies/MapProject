@@ -1,0 +1,195 @@
+ [
+          {
+            "dId": "1",
+            "name": "CC001",
+            "status": "Fail",
+            "location": {
+              "x": 10.240012,
+              "y": 56.225607
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": false,
+            "Flag 4": false,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Lægårdsvej 12, 8520 Lystrup",
+            "deviceTypeImg": "cc.png",
+            "infotime": "2022-09-07T13:43:48.873033",
+            "image": "CC001.png"
+          },
+          {
+            "dId": "2",
+            "name": "SIR001",
+            "status": "Fail",
+            "location": {
+              "x": 10.237575,
+              "y": 56.225528
+            },
+            "Flag 1": false,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Lægårdsvej, 8520 Lystrup",
+            "deviceTypeImg": "siren.png",
+            "infotime": "2022-09-07T23:43:48.873033",
+            "image": "SIR001.PNG"
+          },
+          {
+            "dId": "3",
+            "name": "SIR002",
+            "status": "Partial",
+            "location": {
+              "x": 10.206624,
+              "y": 56.148810
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": false,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "8000 Aarhus C",
+            "deviceTypeImg": "siren.png",
+            "infotime": "2022-09-07T07:43:48.873033",
+            "image": "SIR002.PNG"
+          },
+          {
+            "dId": "4",
+            "name": "SIR003",
+            "status": "Normal",
+            "location": {
+              "x": 10.234422,
+              "y": 56.092216
+
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Aarhus Municipality",
+            "deviceTypeImg": "Siren.png",
+            "infotime": "2022-09-07T07:43:48.873033",
+            "image": "SIR003.PNG"
+          },
+       
+          {
+            "dId": "5",
+            "name": "CC002",
+            "status": "Normal",
+            "location": {
+              "x": 12.647122,
+              "y": 55.612672
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Capital Region of Denmark",
+            "deviceTypeImg": "cc.png",
+            "infotime": "2022-09-07T08:43:48.873033",
+            "image": "CC002.png"
+          },
+          {
+            "dId": "6",
+            "name": "SIR006",
+            "status": "Normal",
+            "location": {
+              "x": 12.657788,
+              "y": 55.633954
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Kastrup",
+            "deviceTypeImg": "Siren.png",
+            "infotime": "2022-09-07T07:49:48.873033",
+            "image": "SIR006.PNG"
+          },
+          {
+            "dId": "7",
+            "name": "SIR007",
+            "status": "Normal",
+            "location": {
+              "x": 12.615427,
+              "y": 55.565812
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Dragør",
+            "deviceTypeImg": "Siren.png",
+            "infotime": "2022-08-07T07:43:41.873033",
+            "image": "SIR007.PNG"
+          },
+          {
+            "dId": "8",
+            "name": "SIR008",
+            "status": "Normal",
+            "location": {
+              "x": 12.571024,
+              "y": 55.625896
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "2300 København",
+            "deviceTypeImg": "Siren.png",
+            "infotime": "2022-07-07T07:43:48.873033",
+            "image": "SIR008.PNG"
+          },
+          {
+            "dId": "9",
+            "name": "SIR009",
+            "status": "Normal",
+            "location": {
+              "x": 12.609107,
+              "y": 55.696436
+            },
+            "Flag 1": true,
+            "Flag 2": true,
+            "Flag 3": true,
+            "Flag 4": true,
+            "Flag 5": true,
+            "voltage": 25.50,
+            "address": "Refshalevej, 1432 København",
+            "deviceTypeImg": "Siren.png",
+            "infotime": "2022-06-07T07:43:48.873033",
+            "image": "SIR009.PNG"
+          },
+          {
+            "dId": "10",
+            "name": "SIR010",
+            "status": "Fail",
+            "location": {
+              "x": 11.671320,
+              "y": 55.478001
+            },
+            "Flag 1": false,
+            "Flag 2": false,
+            "Flag 3": false,
+            "Flag 4": false,
+            "Flag 5": false,
+            "voltage": 25.50,
+            "address": "4100 Ringsted, DK",
+            "deviceTypeImg": "Siren.png",
+            "infotime": "2022-09-04T07:43:48.873033",
+            "image": "SIR010.PNG"
+          }
+  
+  ]
